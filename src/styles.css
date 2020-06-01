@@ -1,0 +1,86 @@
+div.main-container {
+  padding: 15px;
+}
+div.first-box {
+  background: linear-gradient(to bottom, #d5dee7 0%, #e8ebf2 50%, #e2e7ed 100%);
+  max-width: 500px;
+  padding: 20px 15px;
+  font-family: "Nanum Gothic", sans-serif;
+  box-shadow: 8px 4px 4px grey;
+  border-radius: 4px;
+  display: block;
+  margin: 10px auto;
+}
+
+div.second-box {
+  background: linear-gradient(to bottom, #d5dee7 0%, #e8ebf2 50%, #e2e7ed 100%);
+  max-width: 500px;
+  padding: 40px 30px;
+  box-shadow: 8px 4px 4px grey;
+  font-family: "Nanum Gothic", sans-serif;
+  border-radius: 4px;
+  display: block;
+  margin: 20px auto;
+}
+
+input.form-control {
+  padding: 5px 10px;
+  font-size: 25px;
+  border-radius: 4px;
+}
+
+button {
+  margin-top: 10px;
+}
+
+h1 {
+  text-align: center;
+  color: #0f4c80;
+  margin-top: 35px;
+  font-size: 35px;
+}
+h2 {
+  text-align: center;
+  color: #5457a6;
+  font-size: 25px;
+}
+h3 {
+  text-align: center;
+  color: #0f4c80;
+  font-size: 30px;
+}
+
+p {
+  text-align: center;
+  opacity: 90%;
+  font-weight: lighter;
+  font-family: "Handlee", cursive;
+  font-size: 18px;
+  margin-top: -20px;
+}
+
+section.general-info {
+  text-align: center;
+  margin-top: 60px;
+}
+
+footer {
+  margin-top: -10px;
+  text-align: center;
+  font-family: "Shadows Into Light", cursive;
+}
+
+.general-info-parameter {
+  font-size: 15px;
+  font-family: "Handlee", cursive;
+  opacity: 90%;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding-bottom: 2px;
+}
+
+.general-info-value {
+  font-size: 20px;
+  color: #5457a6;
+  font-family: "Handlee", cursive;
+}
