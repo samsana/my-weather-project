@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Weather 🗺</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/f137a9eba2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="src/styles.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Handlee&family=Kalam&family=Nanum+Gothic&family=Oxygen:wght@300;400;700&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="main-container">
+      <div class="first-box">
+        <form class="searchForm" id="my-form">
+          <div>
+            <input
+              type="text"
+              class="form-control"
+              id="enter-city"
+              placeholder="Enter a city"
+              autocomplete="off"
+            />
+            <small class="form-text text-muted">
+              We'll never share your location with anyone else.
+            </small>
+          </div>
+          <button type="submit" id="search" class="btn btn-primary">
+            Search
+          </button>
+          <button type="button" id="current-location" class="btn btn-success">
+            Location
+          </button>
+        </form>
+      </div>
+
+      <div class="second-box">
+        <p id="today"></p>
+        <h1><span id="city"></span><span id="country"></span></h1>
+        <h2 id="description"></h2>
+        <h3 id="current-temp"></h3>
+        <img id="OnLoadOnly" src="img/world_map_.svg" alt="" />
+
+        <section class="general-info">
+          <div class="row">
+            <div class="col general-info-parameter">PRESSURE</div>
+            <div class="col general-info-parameter">WIND</div>
+            <div class="col general-info-parameter">HUMIDITY</div>
+          </div>
+
+          <div class="row">
+            <div class="col general-info-value" id="pressure"></div>
+            <div class="col general-info-value" id="wind"></div>
+            <div class="col general-info-value" id="hum"></div>
+          </div>
+        </section>
+      </div>
+
+      <footer>
+        Coded by Anastasia Samsonova <br />
+        <a href="https://www.instagram.com/anastasia.sams/" target="_blank">
+          <i class="fab fa-instagram"></i
+        ></a>
+        <i class="fab fa-linkedin"></i>
+        <i class="fab fa-github"></i>
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
