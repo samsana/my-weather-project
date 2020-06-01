@@ -45,7 +45,7 @@ function showWeather(response) {
     "#pressure"
   ).innerHTML = `${response.data.main.pressure} hpa`;
   document.querySelector("#wind").innerHTML = `${response.data.wind.speed} m/s`;
-  document.getElementById("muteMe").hidden = true;
+  document.getElementById("image-onload-only").hidden = true;
 }
 
 function getCoordinatesApi(position) {
