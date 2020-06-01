@@ -45,7 +45,6 @@ function showWeather(response) {
     "#pressure"
   ).innerHTML = `${response.data.main.pressure} hpa`;
   document.querySelector("#wind").innerHTML = `${response.data.wind.speed} m/s`;
-  document.getElementById("OnLoadOnly").hidden = true;
 
   console.log(response.data);
   console.log(response.data.sys.country);
