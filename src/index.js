@@ -45,11 +45,7 @@ function showWeather(response) {
     "#pressure"
   ).innerHTML = `${response.data.main.pressure} hpa`;
   document.querySelector("#wind").innerHTML = `${response.data.wind.speed} m/s`;
-
-  console.log(response.data);
-  console.log(response.data.sys.country);
-  console.log(response.data.main.temp);
-  console.log(response.data.name);
+  document.getElementById("muteMe").hidden = true;
 }
 
 function getCoordinatesApi(position) {
@@ -70,5 +66,3 @@ form.addEventListener("submit", handleSubmit);
 
 let greenLocationButton = document.querySelector("#current-location");
 greenLocationButton.addEventListener("click", getCurrentLocation);
-
-searchCity("Berlin");
