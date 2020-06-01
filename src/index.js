@@ -70,3 +70,5 @@ form.addEventListener("submit", handleSubmit);
 
 let greenLocationButton = document.querySelector("#current-location");
 greenLocationButton.addEventListener("click", getCurrentLocation);
+
+searchCity("Berlin");
