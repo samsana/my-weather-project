@@ -114,6 +114,20 @@ section.hour-forecast-display {
   max-width: 50px;
 }
 
+.active {
+  color: #0f4c80;
+}
+
+.active:hover {
+  text-decoration: none;
+  cursor: default;
+  color: #0f4c80;
+}
+
+.add-hover:hover {
+  cursor: default;
+}
+
 footer {
   margin-top: -10px;
   text-align: center;

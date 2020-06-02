@@ -73,6 +73,8 @@ greenLocationButton.addEventListener("click", getCurrentLocation);
 
 function convertToFahrenheit(event) {
   event.preventDefault();
+  celsius.classList.remove("active");
+  fahrenheit.classList.add("active");
   let fahrenheitTemperature = (defaultCelsiusTemperature * 9) / 5 + 32;
   document.querySelector("#current-temp").innerHTML = `${Math.round(
     fahrenheitTemperature
@@ -86,6 +88,8 @@ fahrenheit.addEventListener("click", convertToFahrenheit);
 
 function convertToCelsius(event) {
   event.preventDefault();
+  celsius.classList.add("active");
+  fahrenheit.classList.remove("active");
   document.querySelector("#current-temp").innerHTML = `${Math.round(
     defaultCelsiusTemperature
   )}°`;
