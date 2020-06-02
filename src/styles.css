@@ -25,8 +25,8 @@ div.second-box {
 }
 
 input.form-control {
-  padding: 5px 10px;
-  font-size: 25px;
+  padding-left: 10px;
+  font-size: 20px;
   border-radius: 4px;
 }
 
@@ -99,7 +99,7 @@ section.general-info {
   font-family: "Handlee", cursive;
 }
 
-section.hour-forecast-display {
+.hour-forecast-display {
   margin-top: 0px;
   text-align: center;
   border: 1px solid #bdbdbd;
@@ -107,7 +107,10 @@ section.hour-forecast-display {
   padding: 7px 10px;
   font-size: 13px;
   font-family: "Handlee", cursive;
-  color: #0f4c80;
+}
+
+span.max-temp {
+  font-size: 15px;
 }
 
 .icon {
