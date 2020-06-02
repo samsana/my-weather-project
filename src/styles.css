@@ -1,6 +1,7 @@
 div.main-container {
   padding: 15px;
 }
+
 div.first-box {
   background: linear-gradient(to bottom, #d5dee7 0%, #e8ebf2 50%, #e2e7ed 100%);
   max-width: 500px;
@@ -33,45 +34,58 @@ button {
   margin-top: 10px;
 }
 
+section.main-forecast-display {
+  display: block;
+  letter-spacing: 2px;
+  margin: 20px;
+  margin-top: -20px;
+}
+
 h1 {
   color: #0f4c80;
-  font-size: 35px;
+  font-size: 25px;
 }
 h2 {
   color: #5457a6;
-  font-size: 25px;
+  font-size: 20px;
 }
+
+h2::first-letter {
+  text-transform: uppercase;
+}
+
 h3 {
   color: #0f4c80;
-  font-size: 30px;
+  font-size: 35px;
 }
-img {
-  position: relative;
-  margin: 0;
+
+span.units {
+  font-size: 20px;
+}
+
+.main-icon {
+  width: 110px;
 }
 
 p {
-  text-align: center;
+  text-align: right;
   opacity: 90%;
   font-weight: lighter;
   font-family: "Handlee", cursive;
   font-size: 18px;
   margin-top: -20px;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
 }
 
 section.general-info {
   text-align: center;
-  margin-top: 60px;
-}
-
-footer {
-  margin-top: -10px;
-  text-align: center;
-  font-family: "Shadows Into Light", cursive;
+  margin-top: 45px;
+  margin-bottom: 40px;
 }
 
 .general-info-parameter {
-  font-size: 15px;
+  font-size: 13px;
   font-family: "Handlee", cursive;
   opacity: 90%;
   font-weight: bold;
@@ -85,11 +99,23 @@ footer {
   font-family: "Handlee", cursive;
 }
 
+section.hour-forecast-display {
+  margin-top: 0px;
+  text-align: center;
+  border: 1px solid #bdbdbd;
+  border-radius: 3px;
+  padding: 7px 10px;
+  font-size: 13px;
+  font-family: "Handlee", cursive;
+  color: #0f4c80;
+}
+
 .icon {
   max-width: 50px;
 }
 
-section.forecast {
-  margin-top: 40px;
+footer {
+  margin-top: -10px;
   text-align: center;
+  font-family: "Shadows Into Light", cursive;
 }

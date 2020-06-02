@@ -44,7 +44,9 @@ function showWeather(response) {
   document.querySelector(
     "#pressure"
   ).innerHTML = `${response.data.main.pressure} hpa`;
-  document.querySelector("#wind").innerHTML = `${response.data.wind.speed} m/s`;
+  document.querySelector("#wind").innerHTML = `${Math.round(
+    response.data.wind.speed
+  )} km/h`;
 }
 
 function getCoordinatesApi(position) {

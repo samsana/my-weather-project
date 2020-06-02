@@ -26,19 +26,17 @@
   <body>
     <div class="main-container">
       <div class="first-box">
-        <form class="searchForm" id="my-form">
-          <div>
-            <input
-              type="text"
-              class="form-control"
-              id="enter-city"
-              placeholder="Enter a city"
-              autocomplete="off"
-            />
-            <small class="form-text text-muted">
-              We'll never share your location with anyone else.
-            </small>
-          </div>
+        <form id="my-form">
+          <input
+            type="text"
+            class="form-control"
+            id="enter-city"
+            placeholder="Enter a city"
+            autocomplete="off"
+          />
+          <small class="form-text text-muted">
+            We'll never share your location with anyone else.
+          </small>
           <button type="submit" id="search" class="btn btn-primary">
             Search
           </button>
@@ -47,41 +45,40 @@
           </button>
         </form>
       </div>
-
       <div class="second-box">
         <p id="today"></p>
-
-        <div class="row">
-          <div class="col-sml">
-            <img
-              src="https://openweathermap.org/img/wn/10d@2x.png"
-              alt="icon"
-            />
+        <section class="main-forecast-display">
+          <div class="row main-temperature-display">
+            <div class="col-sml">
+              <img
+                class="main-icon"
+                src="https://openweathermap.org/img/wn/10d@2x.png"
+                alt="icon"
+              />
+            </div>
+            <div class="col">
+              <h1><span id="city"></span><span id="country"></span></h1>
+              <h2 id="description"></h2>
+              <h3>
+                <span id="current-temp"></span
+                ><span class="units"><a href="#">C</a>|<a href="#">F</a></span>
+              </h3>
+            </div>
           </div>
-          <div class="col">
-            <h1><span id="city"></span><span id="country"></span></h1>
-            <h2 id="description"></h2>
-            <h3>
-              <span id="current-temp"></span><a href="#">C</a>|<a href="#">F</a>
-            </h3>
-          </div>
-        </div>
-
+        </section>
         <section class="general-info">
           <div class="row">
             <div class="col general-info-parameter">PRESSURE</div>
             <div class="col general-info-parameter">WIND</div>
             <div class="col general-info-parameter">HUMIDITY</div>
           </div>
-
           <div class="row">
             <div class="col general-info-value" id="pressure"></div>
             <div class="col general-info-value" id="wind"></div>
             <div class="col general-info-value" id="hum"></div>
           </div>
         </section>
-
-        <section class="forecast">
+        <section class="hour-forecast-display">
           <div class="row">
             <div class="col">
               12:00 <br />
@@ -91,7 +88,7 @@
                 alt=""
               />
               <br />
-              12°| 10°
+              12° | 10°
             </div>
             <div class="col">
               15:00 <br />
@@ -101,7 +98,7 @@
                 alt=""
               />
               <br />
-              12°| 10°
+              12° | 10°
             </div>
             <div class="col">
               18:00 <br />
@@ -111,7 +108,7 @@
                 alt=""
               />
               <br />
-              12°| 10°
+              12° | 10°
             </div>
             <div class="col">
               21:00 <br />
@@ -121,7 +118,7 @@
                 alt=""
               />
               <br />
-              12°| 10°
+              12° | 10°
             </div>
             <div class="col">
               00:00 <br />
@@ -131,12 +128,11 @@
                 alt=""
               />
               <br />
-              12°| 10°
+              12° | 10°
             </div>
           </div>
         </section>
       </div>
-
       <footer>
         Coded by Anastasia Samsonova <br />
         <a href="https://www.instagram.com/anastasia.sams/" target="_blank">
