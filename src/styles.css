@@ -1,4 +1,7 @@
 div.main-container {
+  max-width: 500px;
+  display: block;
+  margin: 0px auto;
   padding: 15px;
 }
 
@@ -25,13 +28,15 @@ div.second-box {
 }
 
 input.form-control {
+  margin-top: -5px;
   padding-left: 10px;
   font-size: 20px;
   border-radius: 4px;
 }
 
 button {
-  margin-top: 10px;
+  margin-top: 6px;
+  margin-bottom: -5px;
 }
 
 section.main-forecast-display {
@@ -107,6 +112,7 @@ section.general-info {
   padding: 7px 10px;
   font-size: 13px;
   font-family: "Handlee", cursive;
+  box-shadow: 5px 2px 6px grey;
 }
 
 span.max-temp {
@@ -134,5 +140,5 @@ span.max-temp {
 footer {
   margin-top: -10px;
   text-align: center;
-  font-family: "Shadows Into Light", cursive;
+  font-family: monospace;
 }
