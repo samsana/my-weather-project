@@ -31,6 +31,9 @@ function handleSubmit(event) {
 
 function showWeather(response) {
   document.querySelector("#city").innerHTML = response.data.name;
+
+  defaultCelsiusTemperature = response.data.main.temp;
+
   document.querySelector("#current-temp").innerHTML = `${Math.round(
     response.data.main.temp
   )}°`;
@@ -67,5 +70,28 @@ form.addEventListener("submit", handleSubmit);
 
 let greenLocationButton = document.querySelector("#current-location");
 greenLocationButton.addEventListener("click", getCurrentLocation);
+
+function convertToFahrenheit(event) {
+  event.preventDefault();
+  let fahrenheitTemperature = (defaultCelsiusTemperature * 9) / 5 + 32;
+  document.querySelector("#current-temp").innerHTML = `${Math.round(
+    fahrenheitTemperature
+  )}°`;
+}
+
+let defaultCelsiusTemperature = null;
+
+let fahrenheit = document.querySelector("#fahrenheit");
+fahrenheit.addEventListener("click", convertToFahrenheit);
+
+function convertToCelsius(event) {
+  event.preventDefault();
+  document.querySelector("#current-temp").innerHTML = `${Math.round(
+    defaultCelsiusTemperature
+  )}°`;
+}
+
+let celsius = document.querySelector("#celsius");
+celsius.addEventListener("click", convertToCelsius);
 
 searchCity("Naples");
