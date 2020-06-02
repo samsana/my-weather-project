@@ -33,7 +33,7 @@ function showWeather(response) {
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#current-temp").innerHTML = `${Math.round(
     response.data.main.temp
-  )}°C`;
+  )}°`;
   document.querySelector(
     "#country"
   ).innerHTML = `, ${response.data.sys.country}`;
@@ -45,7 +45,6 @@ function showWeather(response) {
     "#pressure"
   ).innerHTML = `${response.data.main.pressure} hpa`;
   document.querySelector("#wind").innerHTML = `${response.data.wind.speed} m/s`;
-  document.getElementById("image-onload-only").hidden = true;
 }
 
 function getCoordinatesApi(position) {
@@ -66,3 +65,5 @@ form.addEventListener("submit", handleSubmit);
 
 let greenLocationButton = document.querySelector("#current-location");
 greenLocationButton.addEventListener("click", getCurrentLocation);
+
+searchCity("Naples");

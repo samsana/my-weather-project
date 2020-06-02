@@ -50,11 +50,19 @@
 
       <div class="second-box">
         <p id="today"></p>
-        <h1><span id="city"></span><span id="country"></span></h1>
-        <h2 id="description"></h2>
-        <h3 id="current-temp"></h3>
 
-        <img id="image-onload-only" src="world_map_.svg" alt="" />
+        <div class="row">
+          <div class="col-sml">
+            <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="icon" />
+          </div>
+          <div class="col">
+            <h1><span id="city"></span><span id="country"></span></h1>
+            <h2 id="description"></h2>
+            <h3>
+              <span id="current-temp"></span><a href="#">C</a>|<a href="#">F</a>
+            </h3>
+          </div>
+        </div>
 
         <section class="general-info">
           <div class="row">
@@ -67,6 +75,61 @@
             <div class="col general-info-value" id="pressure"></div>
             <div class="col general-info-value" id="wind"></div>
             <div class="col general-info-value" id="hum"></div>
+          </div>
+        </section>
+
+        <section class="forecast">
+          <div class="row">
+            <div class="col">
+              12:00 <br />
+              <img
+                class="icon"
+                src="http://openweathermap.org/img/wn/10d@2x.png"
+                alt=""
+              />
+              <br />
+              12°| 10°
+            </div>
+            <div class="col">
+              15:00 <br />
+              <img
+                class="icon"
+                src="http://openweathermap.org/img/wn/10d@2x.png"
+                alt=""
+              />
+              <br />
+              12°| 10°
+            </div>
+            <div class="col">
+              18:00 <br />
+              <img
+                class="icon"
+                src="http://openweathermap.org/img/wn/10d@2x.png"
+                alt=""
+              />
+              <br />
+              12°| 10°
+            </div>
+            <div class="col">
+              21:00 <br />
+              <img
+                class="icon"
+                src="http://openweathermap.org/img/wn/10d@2x.png"
+                alt=""
+              />
+              <br />
+              12°| 10°
+            </div>
+            <div class="col">
+              00:00 <br />
+              <img
+                class="icon"
+                src="http://openweathermap.org/img/wn/10d@2x.png"
+                alt=""
+              />
+              <br />
+              12°| 10°
+            </div>
           </div>
         </section>
       </div>
