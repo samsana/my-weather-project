@@ -72,7 +72,7 @@ p {
   opacity: 90%;
   font-weight: lighter;
   font-family: "Handlee", cursive;
-  font-size: 18px;
+  font-size: 15px;
   margin-top: -20px;
   margin-bottom: 40px;
   letter-spacing: 1px;
@@ -80,7 +80,7 @@ p {
 
 section.general-info {
   text-align: center;
-  margin-top: 45px;
+  margin-top: 35px;
   margin-bottom: 40px;
 }
 
