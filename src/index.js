@@ -10,7 +10,13 @@ let days = [
 ];
 let day = days[today.getDay()];
 let hour = today.getHours();
+if (hour < 10) {
+  hour = `0${hour};`;
+}
 let minute = today.getMinutes();
+if (minute < 10) {
+  minute = `0${minute}`;
+}
 let date = document.querySelector("#today");
 date.innerHTML = `${day}, ${hour}:${minute}`;
 
@@ -63,7 +69,7 @@ function searchCity(city) {
 
 function handleSubmit(event) {
   event.preventDefault();
-  let city = document.querySelector("#enter-city").value;
+  let city = document.querySelector("#enter-city").value.trim();
   searchCity(city);
 }
 
@@ -84,7 +90,7 @@ function showWeather(response) {
   ).innerHTML = `${response.data.weather[0].description}`;
   document.querySelector(
     "#pressure"
-  ).innerHTML = `${response.data.main.pressure} hpa`;
+  ).innerHTML = `${response.data.main.pressure} hPa`;
   document.querySelector("#wind").innerHTML = `${Math.round(
     response.data.wind.speed
   )} km/h`;
