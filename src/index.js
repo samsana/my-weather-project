@@ -11,7 +11,7 @@ let days = [
 let day = days[today.getDay()];
 let hour = today.getHours();
 if (hour < 10) {
-  hour = `0${hour};`;
+  hour = `0${hour}`;
 }
 let minute = today.getMinutes();
 if (minute < 10) {
